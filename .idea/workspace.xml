@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d42d93ca-15e8-4613-8cf0-cf9b40c5b99b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/API/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/app-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/auth-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/dialogs-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/users-reduser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/users-selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/validators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/preloader.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Common/FormsControl/FormsControl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Common/FormsControl/formControl.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Common/Preloader/Preloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Dialogs/DialogItem/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Dialogs/DialogItem/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Dialogs/DialogItem/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Dialogs/DialogItem/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Dialogs/DialogItem/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Dialogs/DialogItem/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Dialogs/DialogItem/DialogItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Dialogs/DialogItem/DialogItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Dialogs/MessageItem/MessageItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Dialogs/MessageItem/MessageItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Features/Features.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Features/Features.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Profile/MyPosts/ProfileStatus/ProfileStatus.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Profile/MyPosts/ProfileStatus/ProfileStatusWithHooks.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Users/Users.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Users/Users.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Users/UsersContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/Kotov_portfolio.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/css/swiper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/files/project-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/fonts/Oswald-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/fonts/Oswald-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/fonts/Oswald-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/fonts/Oswald-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/fonts/_fonts.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/Kotov_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/advantages/agreement-img.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/advantages/conversation-img.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/advantages/deadline-img.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/advantages/offer-img.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/advantages/steps-img.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/advantages/storage-img.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/ava-kotov.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/form/human.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/form/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/projectsIcons/feedback.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/projectsIcons/price.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/projectsIcons/timing.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/social/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/social/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/social/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/img/social/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/js/swiper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/js/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/sass/_variable.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/sass/style.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLO_portfolio/src/sounds/boom.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/Witcher.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/css/jquery.fancybox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/css/swiper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/files/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/files/slide-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/files/slide-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/fonts/MasonChronicles.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/fonts/MasonChronicles.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/fonts/_fonts.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/img/arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/img/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/img/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/img/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/img/sliderArrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/img/star-empt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/img/star-fill.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/img/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/js/jquery.fancybox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/js/swiper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/sass/_variable.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/sass/style.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Witcher/src/sounds/boom.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/catalog-itemRev2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/catalogRev2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/files/American_crew_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/files/American_crew_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/files/Baxter_of_California_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/files/Baxter_of_California_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/files/Baxter_of_California_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/files/Baxter_of_California_card_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/files/Baxter_of_California_card_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/files/Baxter_of_California_card_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/files/Baxter_of_California_card_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/files/SUAVECITO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/fonts/ptsansnarrow.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/fonts/ptsansnarrow.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/fonts/ptsansnarrowbold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/fonts/ptsansnarrowbold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/Asset 1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/Layer 27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/advantage-1-illustration.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/advantage-2-illustration.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/advantage-3-illustration.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/cross.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/cross_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/login.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/logo-txt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/main-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/map.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/mapBorodoff.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/pattern-dark.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/pattern-light.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/sect-separator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/slider-photo-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/verticzl-separator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/img/vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/indexRev1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/indexRev2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/price.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/sass/style.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/shop-item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barbershop/src/sounds/boom.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/fonts/Oswald-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/fonts/Oswald-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/fonts/Oswald-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/fonts/Oswald-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/fonts/_fonts.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/img/logo-mobile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/sass/_variable.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/sass/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/sass/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/sass/style.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat-energy/src/sounds/boom.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/fonts/cuprum.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/fonts/cuprum.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/fonts/cuprumbold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/fonts/cuprumbold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/fonts/cuprumbolditalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/fonts/cuprumbolditalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/fonts/cuprumitalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/fonts/cuprumitalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/fonts/ptsans.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/fonts/ptsans.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/fonts/ptsansbold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/fonts/ptsansbold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/checkbox-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/checkbox-on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/filter-button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/form-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/form-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/header-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-bookmark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-down-dir.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-fb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-insta.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-login.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-logout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-right-small.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-up-dir.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/icon-vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/radio-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/radio-on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/img/red-button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/technomart/src/sounds/boom.wav" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="samura-1" />
+    <favorites_list name="Test">
+      <favorite_root url="file://$PROJECT_DIR$" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+    </favorites_list>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Projects\Study\reactjs\samura\samura-1\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XvEhoy8BlTOzTZqBEs5RJJBxZL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../temp/test-app" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="file.status.colors" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\Study\reactjs\samura\samura-1\src\Redux" />
+      <recent name="C:\Projects\Study\reactjs\samura\samura-1\src\components\Main" />
+      <recent name="C:\Projects\Study\reactjs\samura\samura-1\src\components\Main\Profile\MyPosts\ProfileStatus" />
+      <recent name="C:\Projects\Study\reactjs\samura\samura-1\src\components\Header" />
+      <recent name="C:\Projects\Study\reactjs\samura\samura-1\src\components\Main\Profile" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\Study\reactjs\samura\samura-1\src\components" />
+      <recent name="C:\Projects\Study\reactjs\samura\samura-1\src\components\Main" />
+      <recent name="C:\Projects\Study\reactjs\samura\samura-1\src\assets\images" />
+      <recent name="C:\Projects\Study\reactjs\samura\samura-1\src\components\Main\Profile\MyPosts\ProfileInfo" />
+      <recent name="C:\Projects\Study\reactjs\samura\samura-1\src\components\Main\Profile\MyPosts\Post" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.profile-reducer.test.js">
+    <configuration name="profile-reducer.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/Redux/profile-reducer.test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MyPosts.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/Main/Profile/MyPosts/MyPosts.jsx" working-dir="$PROJECT_DIR$/src/components/Main/Profile/MyPosts">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.profile-reducer.test.js" />
+        <item itemvalue="Node.js.MyPosts.jsx" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Lopatin\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d42d93ca-15e8-4613-8cf0-cf9b40c5b99b" name="Default Changelist" comment="" />
+      <created>1581918290556</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581918290556</updated>
+      <workItem from="1581918295224" duration="208000" />
+      <workItem from="1581924656578" duration="27000" />
+      <workItem from="1581924998280" duration="614000" />
+      <workItem from="1581925663592" duration="43000" />
+      <workItem from="1581925854079" duration="486000" />
+      <workItem from="1581926415264" duration="17528000" />
+      <workItem from="1581985418860" duration="40673000" />
+      <workItem from="1582198409864" duration="23482000" />
+      <workItem from="1582374885459" duration="23518000" />
+      <workItem from="1582494600428" duration="20671000" />
+      <workItem from="1582668218836" duration="396000" />
+      <workItem from="1582668664258" duration="19791000" />
+      <workItem from="1582928597372" duration="20010000" />
+      <workItem from="1583270379653" duration="61243000" />
+      <workItem from="1583779156423" duration="639000" />
+      <workItem from="1583873077239" duration="16376000" />
+      <workItem from="1584133311233" duration="785000" />
+      <workItem from="1584143503138" duration="89333000" />
+      <workItem from="1585179977338" duration="33572000" />
+      <workItem from="1585601345060" duration="79726000" />
+      <workItem from="1586220472305" duration="2640000" />
+      <workItem from="1586226227504" duration="13136000" />
+      <workItem from="1586400463599" duration="41583000" />
+      <workItem from="1586913912543" duration="64326000" />
+      <workItem from="1587602603188" duration="13203000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Projects/Study/reactjs/samura/samura-1/src/components/Main/Profile" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="456" y="108" key="#ESLint" timestamp="1582417831229">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="456" y="108" key="#ESLint/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1582417831229" />
+    <state x="419" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587698793837">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="419" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1587698793837" />
+    <state x="631" y="222" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583448721626">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="631" y="222" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1583448721626" />
+    <state x="693" y="215" key="FileChooserDialogImpl" timestamp="1587788937517">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="693" y="215" key="FileChooserDialogImpl/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1587788937517" />
+    <state width="1894" height="270" key="GridCell.Tab.0.bottom" timestamp="1587794452158">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1894" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1587794452158" />
+    <state width="1894" height="270" key="GridCell.Tab.0.center" timestamp="1587794452158">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1894" height="270" key="GridCell.Tab.0.center/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1587794452158" />
+    <state width="1894" height="270" key="GridCell.Tab.0.left" timestamp="1587794452157">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1894" height="270" key="GridCell.Tab.0.left/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1587794452157" />
+    <state width="1894" height="270" key="GridCell.Tab.0.right" timestamp="1587794452158">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1894" height="270" key="GridCell.Tab.0.right/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1587794452158" />
+    <state x="704" y="109" width="1207" height="902" key="SettingsEditor" timestamp="1587773251887">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="704" y="109" width="1207" height="902" key="SettingsEditor/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1587773251887" />
+    <state x="96" y="96" width="1728" height="860" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586738397216">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="96" y="96" width="1728" height="860" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1586738397216" />
+    <state x="590" y="38" width="896" height="975" key="find.popup" timestamp="1586396725724">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="590" y="38" width="896" height="975" key="find.popup/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1586396725724" />
+    <state width="750" height="530" key="javadoc.popup" timestamp="1585661299663">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="750" height="530" key="javadoc.popup/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1585661299663" />
+    <state x="539" y="17" width="840" height="1034" key="search.everywhere.popup" timestamp="1587686416599">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="539" y="17" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1052/-1366.0.1366.768@0.0.1920.1052" timestamp="1587686416599" />
+  </component>
+</project>
