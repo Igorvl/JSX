@@ -1,0 +1,14 @@
+.mainAside {
+    background-color: darkgray;
+    grid-area: 1/4/2/5;
+}
+.nav_link {
+    padding: 7px;
+    display: flex;
+    text-decoration: none;
+}
+.nav_ul {
+    padding: 0px;
+    padding-left: 10px;
+    list-style: none;
+}
