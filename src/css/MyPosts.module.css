@@ -1,5 +1,11 @@
-.mainBlock{
-    grid-area: 1/3/2/4;
+.mainBlock {
     background-color: white;
-    height: 94vh;
+}
+
+button {
+    margin-right: 10px;
+    border: none;
+}
+.posts{
+    margin-top: 30px;
 }
