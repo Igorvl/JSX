@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import s from './Navbar.module.css';
-import logoNav from "../../logo.svg"
+import s from '../../css/Navbar.module.css';
+import logoNav from "../../Images/logo.svg"
 
 export default () => {
 	return (

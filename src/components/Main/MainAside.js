@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import s from './MainAside.module.css';
+import s from '../../css/MainAside.module.css';
 
 export default () => {
 	return (

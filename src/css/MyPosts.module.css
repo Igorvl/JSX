@@ -1,0 +1,5 @@
+.mainBlock{
+    grid-area: 1/3/2/4;
+    background-color: white;
+    height: 94vh;
+}

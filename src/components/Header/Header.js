@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import logo from '../../logo.svg';
-import loupe from '../../head_loupe.svg';
-import camera from '../../camera_50.png';
-import s from '../Header/Header.module.css';
+import logo from '../../Images/logo.svg';
+import loupe from '../../Images/head_loupe.svg';
+import camera from '../../Images/camera_50.png';
+import s from '../../css/Header.module.css';
 
 export default () => {
 	return (
