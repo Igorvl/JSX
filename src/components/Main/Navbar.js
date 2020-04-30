@@ -7,7 +7,7 @@ export default () => {
 				<nav className={s.leftNav}>
 					<ul className={s.nav_ul}>
 						<li>
-							<a href="#" className={s.nav_link}>
+							<a href="/profile" className={s.nav_link}>
 								<img src={logoNav} className={s.logo_nav} alt=""/>
 								<span className={s.nav_txt}>
 										Profile
@@ -15,7 +15,7 @@ export default () => {
 							</a>
 						</li>
 						<li>
-							<a href="#" className={s.nav_link}>
+							<a href="/messages" className={s.nav_link}>
 								<img src={logoNav} className={s.logo_nav} alt=""/>
 								<span className={s.nav_txt}>
 										Messages
@@ -23,7 +23,7 @@ export default () => {
 							</a>
 						</li>
 						<li>
-							<a href="#" className={s.nav_link}>
+							<a href="/news" className={s.nav_link}>
 								<img src={logoNav} className={s.logo_nav} alt=""/>
 								<span className={s.nav_txt}>
 										News
@@ -31,7 +31,7 @@ export default () => {
 							</a>
 						</li>
 						<li>
-							<a href="#" className={s.nav_link}>
+							<a href="/music" className={s.nav_link}>
 								<img src={logoNav} className={s.logo_nav} alt=""/>
 								<span className={s.nav_txt}>
 										Music
@@ -39,7 +39,7 @@ export default () => {
 							</a>
 						</li>
 						<li>
-							<a href="#" className={s.nav_link}>
+							<a href="/games" className={s.nav_link}>
 								<img src={logoNav} className={s.logo_nav} alt=""/>
 								<span className={s.nav_txt}>
 										Games
@@ -47,7 +47,7 @@ export default () => {
 							</a>
 						</li>
 						<li>
-							<a href="#" className={s.nav_link}>
+							<a href="/settings" className={s.nav_link}>
 								<img src={logoNav} className={s.logo_nav} alt=""/>
 								<span className={s.nav_txt}>
 										Settings
