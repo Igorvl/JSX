@@ -8,7 +8,7 @@ export default () => {
 				<nav className={s.leftNav}>
 					<ul className={s.nav_ul}>
 						<li>
-							<NavLink to="/profile" className={s.nav_link} activeClassName={s.nav_linkActive}>
+							<NavLink to="/profile" className={s.nav_link} activeClassName={s.navLinkActive}>
 								<img src={logoNav} className={s.logo_nav} alt=""/>
 								<span className={s.nav_txt}>
 										Profile
@@ -16,7 +16,7 @@ export default () => {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/messages" className={s.nav_link} activeClassName={s.nav_linkActive}>
+							<NavLink to="/messages" className={s.nav_link} activeClassName={s.navLinkActive}>
 								<img src={logoNav} className={s.logo_nav} alt=""/>
 								<span className={s.nav_txt}>
 										Messages
@@ -24,7 +24,7 @@ export default () => {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/news" className={s.nav_link} activeClassName={s.nav_linkActive}>
+							<NavLink to="/news" className={s.nav_link} activeClassName={s.navLinkActive}>
 								<img src={logoNav} className={s.logo_nav} alt=""/>
 								<span className={s.nav_txt}>
 										News
@@ -32,7 +32,7 @@ export default () => {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/music" className={s.nav_link} activeClassName={s.nav_linkActive}>
+							<NavLink to="/music" className={s.nav_link} activeClassName={s.navLinkActive}>
 								<img src={logoNav} className={s.logo_nav} alt=""/>
 								<span className={s.nav_txt}>
 										Music
@@ -40,7 +40,7 @@ export default () => {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/games" className={s.nav_link} activeClassName={s.nav_linkActive}>
+							<NavLink to="/games" className={s.nav_link} activeClassName={s.navLinkActive}>
 								<img src={logoNav} className={s.logo_nav} alt=""/>
 								<span className={s.nav_txt}>
 										Games
@@ -48,7 +48,7 @@ export default () => {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/settings" className={s.nav_link} activeClassName={s.nav_linkActive}>
+							<NavLink to="/settings" className={s.nav_link} activeClassName={s.navLinkActive}>
 								<img src={logoNav} className={s.logo_nav} alt=""/>
 								<span className={s.nav_txt}>
 										Settings
