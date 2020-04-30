@@ -1,14 +1,15 @@
 import React from 'react';
 import s from '../../../css/Dialogs.module.css';
+import {NavLink} from "react-router-dom";
 
 export default () => {
 	return (
 		<div className={s.mainDialogs}>
 			<div >
-				<div>User1</div>
-				<div>User2</div>
-				<div>User3</div>
-				<div>User4</div>
+				<div className={s.userItem}><NavLink to={'/dialogs/1'}>User1</NavLink></div>
+				<div className={s.userItem}><NavLink to={'/dialogs/2'}>User2</NavLink></div>
+				<div className={s.userItem}><NavLink to={'/dialogs/3'}>User3</NavLink></div>
+				<div className={s.userItem}><NavLink to={'/dialogs/4'}>User4</NavLink></div>
 
 			</div>
 			<div>
