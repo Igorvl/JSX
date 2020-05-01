@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import s from '../../../../css/MyPosts.module.css';
 import Post from "./Post/Post";
 

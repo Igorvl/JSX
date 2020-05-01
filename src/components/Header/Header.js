@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import logo from '../../Images/logo.svg';
 import loupe from '../../Images/head_loupe.svg';
 import camera from '../../Images/camera_50.png';
@@ -22,6 +22,7 @@ export default () => {
 					</div>
 					
 					<div className={s.loginBlock}>
+						{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
 						<a href="#">
 							<span>Login</span>
 							<img src={camera} className={s.loginBlock__camera} alt=""/>

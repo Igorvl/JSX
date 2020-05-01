@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import s from './css/App.module.css';
 import {BrowserRouter, Route} from "react-router-dom";
 import Header from "./components/Header/Header";

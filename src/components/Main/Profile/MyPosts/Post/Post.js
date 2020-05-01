@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import s from '../../../../../css/Post.module.css';
 import icon from '../../../../../Images/logo.svg'
 
