@@ -3,21 +3,25 @@ import s from '../../../../css/MyPosts.module.css';
 import Post from "./Post/Post";
 
 export default () => {
+	
 	let postData = [
-		{ id: 1,
+		{
+			id: 1,
 			msg: 'Message 1 Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.' +
 				' Lorem ipsum dolor sit amet.',
 			like: 5,
-			dislike: 3 },
-		{ id: 2,
+			dislike: 3
+		},
+		{
+			id: 2,
 			msg: 'Message 2 Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
 			like: 4,
-			dislike: 1 },
-		{ id: 3,
-			msg: 'Message 3 Lorem ipsum dolor sit amet.Lore',
-			like: 8,
-			dislike: 2 },
+			dislike: 1
+		},
 	];
+	
+	let posts = postData.map(p => <Post id={p.id} msg={p.msg} like={p.like} dislike={p.dislike}/>);
+	
 	return (
 		<div>
 			<span>Ввести комментарий</span>
@@ -26,8 +30,7 @@ export default () => {
 			</div>
 			<button className={s.postBtn}>Add post</button>
 			<div className={s.posts}>
-				<Post id={postData[0].id} msg={postData[0].msg} like={postData[0].like} dislike={postData[0].dislike}/>
-				<Post id={postData[1].id} msg={postData[1].msg} like={postData[1].like} dislike={postData[1].dislike}/>
+				{posts}
 			</div>
 		</div>
 	);
