@@ -4,7 +4,7 @@ import s from '../../../../css/ProfileInfo.module.css';
 
 export default () => {
 	return (
-		<div className={s.mainProfile}>
+		<div>
 			Avatar
 			Status
 		</div>

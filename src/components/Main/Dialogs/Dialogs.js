@@ -15,20 +15,35 @@ const Message = (props) => {
 };
 
 export default () => {
+	
+	let dialogData = [
+		{id: 1, name: 'User1'},
+		{id: 2, name: 'User2'},
+		{id: 3, name: 'User3'},
+		{id: 4, name: 'User4'},
+	];
+	
+	let messageData = [
+		{id: 1, message: '1'},
+		{id: 2, message: '2'},
+		{id: 3, message: '3'},
+		{id: 4, message: '4'},
+	];
+	
 	return (
 		<div className={s.mainDialogs}>
-			<div >
-				<DialogItem name={'User1'} id={'1'}/>
-				<DialogItem name={'User2'} id={'2'}/>
-				<DialogItem name={'User3'} id={'3'}/>
-				<DialogItem name={'User4'} id={'4'}/>
-
+			<div>
+				<DialogItem name={dialogData[0].name} id={dialogData[0].id}/>
+				<DialogItem name={dialogData[1].name} id={dialogData[1].id}/>
+				<DialogItem name={dialogData[2].name} id={dialogData[2].id}/>
+				<DialogItem name={dialogData[3].name} id={dialogData[3].id}/>
 			</div>
 			<div>
-				<Message msgId={'1'}/>
-				<Message msgId={'2'}/>
-				<Message msgId={'3'}/>
-				<Message msgId={'4'}/>
+				<Message msgId={messageData[0].message}/>
+				<Message msgId={messageData[1].message}/>
+				<Message msgId={messageData[2].message}/>
+				<Message msgId={messageData[3].message}/>
+				
 			</div>
 		</div>
 	);
