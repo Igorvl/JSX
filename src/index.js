@@ -4,24 +4,15 @@ import './css/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import state from './components/Redux/state';
+import {BrowserRouter} from "react-router-dom";
 
-let dialogData = [
-	{id: 1, name: 'User'},
-	{id: 2, name: 'User'},
-	{id: 3, name: 'User'},
-	{id: 4, name: 'User'},
-];
-
-let messageData = [
-	{id: 1, message: 'text'},
-	{id: 2, message: 'text'},
-	{id: 3, message: 'text'},
-	{id: 4, message: 'text'},
-];
-
-ReactDOM.render(<App
-	postData={state.profilePage.postData}
-	dialogsPage={state.dialogsPage}/>,
+ReactDOM.render(
+	<BrowserRouter>
+		<App
+			postData={state.profilePage.postData}
+			dialogsPage={state.dialogsPage}
+		/>
+	</BrowserRouter>,
 	document.getElementById('root'));
 
 serviceWorker.register();

@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './css/App.module.css';
-import {BrowserRouter, Route} from "react-router-dom";
+import {Route} from "react-router-dom";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Main/Navbar";
 import MainAside from "./components/Main/MainAside";
@@ -13,7 +13,6 @@ import Settings from "./components/Main/Settings/Settings";
 
 export default (props) => {
 	return (
-		<BrowserRouter>
 			<div className={s.app}>
 				<Header/>
 				<main className={s.body}>
@@ -31,7 +30,6 @@ export default (props) => {
 					<MainAside/>
 				</main>
 			</div>
-		</BrowserRouter>
 	);
 };
 
