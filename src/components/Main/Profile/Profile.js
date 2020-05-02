@@ -3,12 +3,12 @@ import s from '../../../css/Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-export default () => {
+export default (props) => {
 	return (
 		<div className={s.mainProfile}>
 			<div>
 				<ProfileInfo/>
-				<MyPosts/>
+				<MyPosts postData={props.postData}/>
 			</div>
 		</div>
 	)

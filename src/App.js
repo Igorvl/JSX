@@ -11,7 +11,7 @@ import Games from "./components/Main/Games/Games";
 import News from "./components/Main/News/News";
 import Settings from "./components/Main/Settings/Settings";
 
-export default () => {
+export default (props) => {
 	return (
 		<BrowserRouter>
 			<div className={s.app}>
@@ -19,12 +19,12 @@ export default () => {
 				<main className={s.body}>
 					<Navbar/>
 					<div className={s.mainField}>
-						<Route component={Profile} path={'/profile'}/>
-						<Route component={Dialogs} path={'/dialogs'}/>
-						<Route component={Music} path={'/music'}/>
-						<Route component={Games} path={'/games'}/>
-						<Route component={News} path={'/news'}/>
-						<Route component={Settings} path={'/settings'}/>
+						<Route render={()=> <Profile postData={props.postData}/>} path={'/profile'}/>
+						<Route render={()=> <Dialogs dialogData={props.dialogData} messageData={props.messageData}/>} path={'/dialogs'}/>
+						<Route render={()=> <Music/>} path={'/music'}/>
+						<Route render={()=> <Games/>} path={'/games'}/>
+						<Route render={()=> <News/>} path={'/news'}/>
+						<Route render={()=> <Settings/>} path={'/settings'}/>
 					</div>
 					<MainAside/>
 				</main>

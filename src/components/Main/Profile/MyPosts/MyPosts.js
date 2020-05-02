@@ -2,25 +2,9 @@ import React from 'react';
 import s from '../../../../css/MyPosts.module.css';
 import Post from "./Post/Post";
 
-export default () => {
+export default (props) => {
 	
-	let postData = [
-		{
-			id: 1,
-			msg: 'Message 1 Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.' +
-				' Lorem ipsum dolor sit amet.',
-			like: 5,
-			dislike: 3
-		},
-		{
-			id: 2,
-			msg: 'Message 2 Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
-			like: 4,
-			dislike: 1
-		},
-	];
-	
-	let posts = postData.map(p => <Post id={p.id} msg={p.msg} like={p.like} dislike={p.dislike}/>);
+	let posts = props.postData.map(p => <Post id={p.id} msg={p.msg} like={p.like} dislike={p.dislike}/>);
 	
 	return (
 		<div>
