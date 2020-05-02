@@ -19,12 +19,12 @@ export default () => {
 				<main className={s.body}>
 					<Navbar/>
 					<div className={s.mainField}>
-						<Route component={Profile} path={'/Profile'}/>
-						<Route component={Dialogs} path={'/Messages'}/>
-						<Route component={Music} path={'/Music'}/>
-						<Route component={Games} path={'/Games'}/>
-						<Route component={News} path={'/News'}/>
-						<Route component={Settings} path={'/Settings'}/>
+						<Route component={Profile} path={'/profile'}/>
+						<Route component={Dialogs} path={'/dialogs'}/>
+						<Route component={Music} path={'/music'}/>
+						<Route component={Games} path={'/games'}/>
+						<Route component={News} path={'/news'}/>
+						<Route component={Settings} path={'/settings'}/>
 					</div>
 					<MainAside/>
 				</main>
