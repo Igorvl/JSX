@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import state from './components/Redux/state';
 
 let dialogData = [
 	{id: 1, name: 'User'},
@@ -18,27 +19,9 @@ let messageData = [
 	{id: 4, message: 'text'},
 ];
 
-
-let postData = [
-	{
-		id: 1,
-		msg: 'Message 1 Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.' +
-			' Lorem ipsum dolor sit amet.',
-		like: 5,
-		dislike: 3
-	},
-	{
-		id: 2,
-		msg: 'Message 2 Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
-		like: 4,
-		dislike: 1
-	},
-];
-
 ReactDOM.render(<App
-	postData={postData}
-	messageData={messageData}
-	dialogData={dialogData}/>,
+	postData={state.profilePage.postData}
+	dialogsPage={state.dialogsPage}/>,
 	document.getElementById('root'));
 
 serviceWorker.register();

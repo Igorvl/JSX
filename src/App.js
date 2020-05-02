@@ -21,8 +21,8 @@ export default (props) => {
 					<div className={s.mainField}>
 						<Route render={()=> <Profile postData={props.postData}/>} path={'/profile'}/>
 						<Route render={()=> <Dialogs
-							dialogData={props.dialogData}
-						  messageData={props.messageData}/>} path={'/dialogs'}/>
+							dialogData={props.dialogsPage.dialogData}
+						  messageData={props.dialogsPage.messageData}/>} path={'/dialogs'}/>
 						<Route render={()=> <Music/>} path={'/music'}/>
 						<Route render={()=> <Games/>} path={'/games'}/>
 						<Route render={()=> <News/>} path={'/news'}/>
