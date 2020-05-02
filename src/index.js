@@ -35,9 +35,10 @@ let postData = [
 	},
 ];
 
-
-
-
-ReactDOM.render(<App postData={postData} messageData={messageData} dialogData={dialogData}/>, document.getElementById('root'));
+ReactDOM.render(<App
+	postData={postData}
+	messageData={messageData}
+	dialogData={dialogData}/>,
+	document.getElementById('root'));
 
 serviceWorker.register();

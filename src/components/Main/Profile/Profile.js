@@ -4,6 +4,7 @@ import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 export default (props) => {
+
 	return (
 		<div className={s.mainProfile}>
 			<div>

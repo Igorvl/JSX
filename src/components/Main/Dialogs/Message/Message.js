@@ -3,6 +3,7 @@ import React from 'react';
 
 
 export default (props) => {
+	
 	return (
 		<div>Message {props.msgId}</div>
 	)
