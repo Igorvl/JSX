@@ -18,7 +18,7 @@ export default (props) => {
 				<main className={s.body}>
 					<Navbar/>
 					<div className={s.mainField}>
-						<Route render={()=> <Profile postData={props.postData}/>} path={'/profile'}/>
+						<Route render={()=> <Profile profilePage={props.profilePage}/>} path={'/profile'}/>
 						<Route render={()=> <Dialogs
 							dialogData={props.dialogsPage.dialogData}
 						  messageData={props.dialogsPage.messageData}/>} path={'/dialogs'}/>

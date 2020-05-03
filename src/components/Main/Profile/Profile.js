@@ -9,7 +9,7 @@ export default (props) => {
 		<div className={s.mainProfile}>
 			<div>
 				<ProfileInfo/>
-				<MyPosts postData={props.postData}/>
+				<MyPosts postData={props.profilePage.postData} addPost={props.profilePage.addPost}/>
 			</div>
 		</div>
 	)

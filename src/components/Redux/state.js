@@ -14,7 +14,8 @@ export default {
 				like: 4,
 				dislike: 1
 			},
-		]
+		],
+
 	},
 	dialogsPage: {
 		dialogData: [
@@ -29,5 +30,15 @@ export default {
 			{id: 3, message: 'text'},
 			{id: 4, message: 'text'},
 		],
+		
 	},
+};
+
+export let addPost = () => {
+	return this.profilePage.postData.push({
+		id: 3,
+		msg: "msg",
+		like: 777,
+		dislike: 666
+	},)
 };

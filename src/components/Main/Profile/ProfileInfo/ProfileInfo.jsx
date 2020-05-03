@@ -1,5 +1,5 @@
 import React from 'react';
-import s from '../../../../css/ProfileInfo.module.css';
+// import s from '../../../../css/ProfileInfo.module.css';
 
 
 export default () => {
