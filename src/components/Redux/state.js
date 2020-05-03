@@ -1,4 +1,4 @@
-export default {
+let state = {
 	profilePage: {
 		postData: [
 			{
@@ -6,16 +6,29 @@ export default {
 				msg: 'Message 1 Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.' +
 					' Lorem ipsum dolor sit amet.',
 				like: 5,
-				dislike: 3
+				dislike: 3,
+				key: 1,
 			},
 			{
 				id: 2,
 				msg: 'Message 2 Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
 				like: 4,
-				dislike: 1
+				dislike: 1,
+				key: 2,
 			},
 		],
-
+		
+		addPost: (msg) => {
+			console.log(msg);
+			state.profilePage.postData.push({
+				id: 3,
+				msg: msg,
+				like: 777,
+				dislike: 666,
+				key: 3,
+			},)
+		},
+		
 	},
 	dialogsPage: {
 		dialogData: [
@@ -34,11 +47,4 @@ export default {
 	},
 };
 
-export let addPost = () => {
-	return this.profilePage.postData.push({
-		id: 3,
-		msg: "msg",
-		like: 777,
-		dislike: 666
-	},)
-};
+export default state;
