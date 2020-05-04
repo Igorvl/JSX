@@ -6,13 +6,16 @@ import * as serviceWorker from './serviceWorker';
 import state from './components/Redux/state';
 import {BrowserRouter} from "react-router-dom";
 
-ReactDOM.render(
-	<BrowserRouter>
-		<App
-			profilePage={state.profilePage}
-			dialogsPage={state.dialogsPage}
-		/>
-	</BrowserRouter>,
-	document.getElementById('root'));
+export let rerenderEntireTree = ()=>{
+	ReactDOM.render(
+		<BrowserRouter>
+			<App
+				profilePage={state.profilePage}
+				dialogsPage={state.dialogsPage}
+			/>
+		</BrowserRouter>,
+		document.getElementById('root'));
+};
 
+rerenderEntireTree();
 serviceWorker.register();

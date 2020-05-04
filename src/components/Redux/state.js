@@ -1,5 +1,10 @@
+import {rerenderEntireTree} from "../../index";
+
+// let newMsgTxt = '';
+
 let state = {
 	profilePage: {
+		newMsgTxt: '',
 		postData: [
 			{
 				id: 1,
@@ -18,15 +23,21 @@ let state = {
 			},
 		],
 		
-		addPost: (msg) => {
-			console.log(msg);
+		addPost: () => {
 			state.profilePage.postData.push({
 				id: 3,
-				msg: msg,
+				msg: state.profilePage.newMsgTxt,
 				like: 777,
 				dislike: 666,
 				key: 3,
-			},)
+			},);
+			state.profilePage.newMsgTxt = "";
+			rerenderEntireTree();
+		},
+		
+		addNewPostText: (msg) => {
+			state.profilePage.newMsgTxt = msg;
+			rerenderEntireTree();
 		},
 		
 	},
