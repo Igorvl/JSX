@@ -1,7 +1,5 @@
 import {rerenderEntireTree} from "../../index";
 
-// let newMsgTxt = '';
-
 let state = {
 	profilePage: {
 		newMsgTxt: '',
@@ -49,13 +47,21 @@ let state = {
 			{id: 4, name: 'User'},
 		],
 		messageData: [
-			{id: 1, message: 'text'},
-			{id: 2, message: 'text'},
-			{id: 3, message: 'text'},
-			{id: 4, message: 'text'},
+			{id: 1, message: 'text Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.'},
+			{id: 2, message: 'text Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.'},
+			{id: 3, message: 'text Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.'},
+			{id: 4, message: 'text Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.'},
 		],
+		
+		newDialogTxt: '',
+		
+		addNewCommentTxt: (msg)=> {
+			state.dialogsPage.newDialogTxt = msg;
+		},
 		
 	},
 };
 
 export default state;
+
+window.state = state;
