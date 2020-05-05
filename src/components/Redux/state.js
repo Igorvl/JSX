@@ -53,12 +53,21 @@ let state = {
 			{id: 4, message: 'text Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.'},
 		],
 		
-		newDialogTxt: '',
+		newCommentTxt: '',
 		
 		addNewCommentTxt: (msg)=> {
-			state.dialogsPage.newDialogTxt = msg;
+			state.dialogsPage.newCommentTxt = msg;
+			rerenderEntireTree();
 		},
 		
+		addNewComment: () => {
+			state.dialogsPage.messageData.push({
+				id: 5,
+				message: state.dialogsPage.newCommentTxt,
+			});
+			state.dialogsPage.newCommentTxt = " ";
+			rerenderEntireTree();
+		},
 	},
 };
 

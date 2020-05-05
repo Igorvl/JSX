@@ -21,7 +21,11 @@ export default (props) => {
 						<Route render={()=> <Profile profilePage={props.profilePage}/>} path={'/profile'}/>
 						<Route render={()=> <Dialogs
 							dialogData={props.dialogsPage.dialogData}
-						  messageData={props.dialogsPage.messageData}/>} path={'/dialogs'}/>
+						  messageData={props.dialogsPage.messageData}
+							addNewCommentTxt={props.dialogsPage.addNewCommentTxt}
+							addNewComment={props.dialogsPage.addNewComment}
+							newCommentTxt = {props.dialogsPage.newCommentTxt}
+						/>} path={'/dialogs'}/>
 						<Route render={()=> <Music/>} path={'/music'}/>
 						<Route render={()=> <Games/>} path={'/games'}/>
 						<Route render={()=> <News/>} path={'/news'}/>
