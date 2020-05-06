@@ -10,6 +10,7 @@ import Music from "./components/Main/Music/Music";
 import Games from "./components/Main/Games/Games";
 import News from "./components/Main/News/News";
 import Settings from "./components/Main/Settings/Settings";
+import store from "./components/Redux/state";
 
 export default (props) => {
 	return (
@@ -18,12 +19,16 @@ export default (props) => {
 				<main className={s.body}>
 					<Navbar/>
 					<div className={s.mainField}>
-						<Route render={()=> <Profile profilePage={props.profilePage}/>} path={'/profile'}/>
+						<Route render={()=> <Profile
+							profilePage={props.store.getState().profilePage}
+							addNewPostText={props.store.addNewPostText}
+							addPost={props.store.addPost}
+						/>} path={'/profile'}/>
 						<Route render={()=> <Dialogs
 							dialogData={props.dialogsPage.dialogData}
 						  messageData={props.dialogsPage.messageData}
-							addNewCommentTxt={props.dialogsPage.addNewCommentTxt}
-							addNewComment={props.dialogsPage.addNewComment}
+							addNewCommentTxt={props.store.addNewCommentTxt.bind(store)}
+							addNewComment={props.store.addNewComment.bind(store)}
 							newCommentTxt = {props.dialogsPage.newCommentTxt}
 						/>} path={'/dialogs'}/>
 						<Route render={()=> <Music/>} path={'/music'}/>
