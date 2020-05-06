@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import state from './components/Redux/state';
+import state, {subscribe} from './components/Redux/state';
 import {BrowserRouter} from "react-router-dom";
 
-export let rerenderEntireTree = ()=>{
+export let rerenderEntireTree = () => {
 	ReactDOM.render(
 		<BrowserRouter>
 			<App
@@ -18,4 +18,7 @@ export let rerenderEntireTree = ()=>{
 };
 
 rerenderEntireTree();
+
+subscribe(rerenderEntireTree);
+
 serviceWorker.register();

@@ -1,4 +1,5 @@
-import {rerenderEntireTree} from "../../index";
+
+let rerenderEntireTree = () => {};
 
 let state = {
 	profilePage: {
@@ -55,7 +56,7 @@ let state = {
 		
 		newCommentTxt: '',
 		
-		addNewCommentTxt: (msg)=> {
+		addNewCommentTxt: (msg) => {
 			state.dialogsPage.newCommentTxt = msg;
 			rerenderEntireTree();
 		},
@@ -69,6 +70,10 @@ let state = {
 			rerenderEntireTree();
 		},
 	},
+};
+
+export const subscribe = (observer) => {
+	rerenderEntireTree = observer;
 };
 
 export default state;
