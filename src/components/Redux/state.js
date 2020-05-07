@@ -1,3 +1,9 @@
+//actions
+const ADD_NEW_COMMENT_TEXT = 'ADD_NEW_COMMENT_TEXT';
+const ADD_NEW_COMMENT = 'ADD_NEW_COMMENT';
+const ADD_NEW_POST_TEXT = 'ADD_NEW_POST_TEXT';
+const ADD_POST = 'ADD_POST';
+
 let store = {
 	
 	// empty variable function for subscriber
@@ -95,6 +101,14 @@ let store = {
 		}
 	},
 };
+
+// action creators
+//for Dialogs NewCommentText andNewComment
+export const addNewCommentTextAC = messageTxt => ({type:ADD_NEW_COMMENT_TEXT, messageTxt: messageTxt});
+export const addNewCommentAC = () => ({type: ADD_NEW_COMMENT});
+//for MyPosts NewPostText addPost
+export const addNewPostTextAC = (messageTxt) => ({type: ADD_NEW_POST_TEXT,	messageTxt: messageTxt});
+export const addPostAC = () => ({type: ADD_POST});
 
 export default store;
 window.store = store;

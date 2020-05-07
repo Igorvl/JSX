@@ -12,7 +12,6 @@ export default (props) => {
 				<MyPosts
 					postData={props.profilePage.postData}
 					dispatch = {props.dispatch}
-					// addPost={props.addPost.bind(props.store)}
 					newMsgTxt={props.profilePage.newMsgTxt}
 				/>
 			</div>

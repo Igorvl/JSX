@@ -4,6 +4,7 @@ import Message from "./Message/Message";
 import DialogItem from "./DialogItem/DialogItem";
 import logo from "../../../Images/logo.svg";
 import Icon28Send from '@vkontakte/icons/dist/28/send';
+import {addNewCommentAC, addNewCommentTextAC} from "../../Redux/state";
 
 export default (props) => {
 	let dialogs = props.dialogData.map(d => <DialogItem name={`${d.name} ${d.id}`} id={d.id}/>);
@@ -29,12 +30,9 @@ export default (props) => {
 						<img src={logo} className={s.logo} alt=""/>
 						<textarea className={s.messageTxt}
 						          onChange={(p)=>{
-							          props.dispatch({
-								          type:'ADD_NEW_COMMENT_TEXT',
-								          messageTxt: p.target.value
-							          })}}
+							          props.dispatch(addNewCommentTextAC(p.target.value))}}
 						          value={props.newCommentTxt}/>
-						<Icon28Send onClick={()=>{props.dispatch({type: 'ADD_NEW_COMMENT'})}} className={s.messageBtn} fill={'#264a64'}/>
+						<Icon28Send onClick={()=>{props.dispatch(addNewCommentAC())}} className={s.messageBtn} fill={'#264a64'}/>
 					</div>
 				</div>
 			</div>
