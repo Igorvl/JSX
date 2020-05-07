@@ -1,7 +1,7 @@
 let store = {
 	
 	// empty variable function for subscriber
-	rerenderEntireTree() {
+	_rerenderEntireTree() {
 	},
 	
 	_state: {
@@ -47,44 +47,52 @@ let store = {
 		return this._state;
 	},
 	
-	// add new post in profilePage-postData
-	addPost() {
-		this._state.profilePage.postData.push({
-			id: 3,
-			msg: this._state.profilePage.newMsgTxt,
-			like: 777,
-			dislike: 666,
-			key: 3,
-		},);
-		this._state.profilePage.newMsgTxt = "";
-		this.rerenderEntireTree();
-	},
-	
-	// adding text in textarea in profilePage
-	addNewPostText(msg) {
-		this._state.profilePage.newMsgTxt = msg;
-		this.rerenderEntireTree();
-	},
-	
-	// subscribing for rerender in index.js
+	// subscribe for rerenderEntireTree form index.js
 	subscribe(observer) {
-		this.rerenderEntireTree = observer;
+		this._rerenderEntireTree = observer;
 	},
 	
-	// adding text in textarea in dialogsPage
-	addNewCommentTxt(msg) {
-		this._state.dialogsPage.newCommentTxt = msg;
-		this.rerenderEntireTree();
-	},
 	
-	// add new comment in dialogsPage-dialogData
-	addNewComment() {
-		this._state.dialogsPage.messageData.push({
-			id: 5,
-			message: this._state.dialogsPage.newCommentTxt,
-		});
-		this._state.dialogsPage.newCommentTxt = "";
-		this.rerenderEntireTree();
+	dispatch(action) {
+		switch (action.type) {
+			// add new post in profilePage-postData
+			case 'ADD_POST':
+				this._state.profilePage.postData.push({
+					id: 3,
+					msg: this._state.profilePage.newMsgTxt,
+					like: 777,
+					dislike: 666,
+					key: 3,
+				},);
+				this._state.profilePage.newMsgTxt = "";
+				this._rerenderEntireTree();
+				break;
+			
+			// add text in textarea in profilePage
+			case 'ADD_NEW_POST_TEXT':
+				this._state.profilePage.newMsgTxt = action.messageTxt;
+				this._rerenderEntireTree();
+				break;
+			
+			// adding text in textarea in dialogsPage
+			case 'ADD_NEW_COMMENT_TEXT':
+				this._state.dialogsPage.newCommentTxt = action.messageTxt;
+				this._rerenderEntireTree();
+				break;
+			
+			// add new comment in dialogsPage-dialogData
+				case 'ADD_NEW_COMMENT':
+				this._state.dialogsPage.messageData.push({
+					id: 5,
+					message: this._state.dialogsPage.newCommentTxt,
+				});
+				this._state.dialogsPage.newCommentTxt = "";
+				this._rerenderEntireTree();
+				break;
+				
+			default:
+				console.log('action undef')
+		}
 	},
 };
 

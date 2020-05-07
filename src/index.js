@@ -12,7 +12,7 @@ export let rerenderEntireTree = () => {
 			<App
 				profilePage={store.getState().profilePage}
 				dialogsPage={store.getState().dialogsPage}
-				store={store}
+				dispatch={store.dispatch.bind(store)}
 			/>
 		</BrowserRouter>,
 		document.getElementById('root'));

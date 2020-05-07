@@ -29,9 +29,12 @@ export default (props) => {
 						<img src={logo} className={s.logo} alt=""/>
 						<textarea className={s.messageTxt}
 						          onChange={(p)=>{
-							          props.addNewCommentTxt(p.target.value)}}
+							          props.dispatch({
+								          type:'ADD_NEW_COMMENT_TEXT',
+								          messageTxt: p.target.value
+							          })}}
 						          value={props.newCommentTxt}/>
-						<Icon28Send onClick={props.addNewComment} className={s.messageBtn} fill={'#264a64'}/>
+						<Icon28Send onClick={()=>{props.dispatch({type: 'ADD_NEW_COMMENT'})}} className={s.messageBtn} fill={'#264a64'}/>
 					</div>
 				</div>
 			</div>
