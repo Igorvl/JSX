@@ -4,7 +4,7 @@ import Message from "./Message/Message";
 import DialogItem from "./DialogItem/DialogItem";
 import logo from "../../../Images/logo.svg";
 import Icon28Send from '@vkontakte/icons/dist/28/send';
-import {addNewCommentAC, addNewCommentTextAC} from "../../Redux/state";
+import {addNewCommentAC, addNewCommentTextAC} from "../../Redux/dialogsReducer";
 
 export default (props) => {
 	let dialogs = props.dialogData.map(d => <DialogItem name={`${d.name} ${d.id}`} id={d.id}/>);
