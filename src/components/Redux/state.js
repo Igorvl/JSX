@@ -55,10 +55,10 @@ let store = {
 		this._rerenderEntireTree = observer;
 	},
 	
-	// dispatcher actions, take only need part of state for each reducer
+	// dispatcher actions, take only need part of state for each reducer. And rewrite this part of state.
 	dispatch(action) {
-		dialogsReducer(this._state.dialogsPage, action);
-		profileReducer(this._state.profilePage, action);
+		this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
+		this._state.dialogsPage = profileReducer(this._state.profilePage, action);
 		this._rerenderEntireTree();
 	},
 };
