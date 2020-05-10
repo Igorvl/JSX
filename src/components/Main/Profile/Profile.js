@@ -1,7 +1,7 @@
 import React from 'react';
 import s from '../../../css/Profile.module.css';
-import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
+import MyPostsContainer from "./MyPosts/MyPostsContainer";
 
 export default (props) => {
 
@@ -9,10 +9,10 @@ export default (props) => {
 		<div className={s.mainProfile}>
 			<div>
 				<ProfileInfo/>
-				<MyPosts
+				<MyPostsContainer
 					postData={props.profilePage.postData}
-					dispatch = {props.dispatch}
 					newMsgTxt={props.profilePage.newMsgTxt}
+					store={props.store}
 				/>
 			</div>
 		</div>

@@ -2,9 +2,7 @@ import React from 'react';
 import s from '../../../css/Dialogs.module.css';
 import Message from "./Message/Message";
 import DialogItem from "./DialogItem/DialogItem";
-import logo from "../../../Images/logo.svg";
 import Icon28Send from '@vkontakte/icons/dist/28/send';
-import {addNewCommentAC, addNewCommentTextAC} from "../../Redux/dialogsReducer";
 
 export default (props) => {
 	let dialogs = props.dialogData.map(d => <DialogItem name={`${d.name} ${d.id}`} id={d.id}/>);
@@ -27,12 +25,11 @@ export default (props) => {
 				<div>
 					<span>Комментировать</span>
 					<div className={s.commentBlock}>
-						<img src={logo} className={s.logo} alt=""/>
+						<img src={props.logo} className={s.logo} alt=""/>
 						<textarea className={s.messageTxt}
-						          onChange={(p)=>{
-							          props.dispatch(addNewCommentTextAC(p.target.value))}}
+						          onChange={(p)=>{props.addNewCommentText(p.target.value)}}
 						          value={props.newCommentTxt}/>
-						<Icon28Send onClick={()=>{props.dispatch(addNewCommentAC())}} className={s.messageBtn} fill={'#264a64'}/>
+						<Icon28Send onClick={()=>{props.addNewComment()}} className={s.messageBtn} fill={'#264a64'}/>
 					</div>
 				</div>
 			</div>

@@ -10,6 +10,7 @@ import Music from "./components/Main/Music/Music";
 import Games from "./components/Main/Games/Games";
 import News from "./components/Main/News/News";
 import Settings from "./components/Main/Settings/Settings";
+import DialogsContainer from "./components/Main/Dialogs/DialogsContainer";
 
 export default (props) => {
 	return (
@@ -20,13 +21,14 @@ export default (props) => {
 					<div className={s.mainField}>
 						<Route render={()=> <Profile
 							profilePage={props.profilePage}
-							dispatch={props.dispatch}
+							store={props.store}
 						/>} path={'/profile'}/>
-						<Route render={()=> <Dialogs
+						<Route render={()=> <DialogsContainer
 							dialogData={props.dialogsPage.dialogData}
 						  messageData={props.dialogsPage.messageData}
 							dispatch={props.dispatch.bind(props.store)}
 							newCommentTxt = {props.dialogsPage.newCommentTxt}
+							store={props.store}
 						/>} path={'/dialogs'}/>
 						<Route render={()=> <Music/>} path={'/music'}/>
 						<Route render={()=> <Games/>} path={'/games'}/>
