@@ -5,7 +5,6 @@ import Header from "./components/Header/Header";
 import Navbar from "./components/Main/Navbar";
 import MainAside from "./components/Main/MainAside";
 import Profile from "./components/Main/Profile/Profile";
-import Dialogs from "./components/Main/Dialogs/Dialogs";
 import Music from "./components/Main/Music/Music";
 import Games from "./components/Main/Games/Games";
 import News from "./components/Main/News/News";
@@ -23,13 +22,7 @@ export default (props) => {
 							profilePage={props.profilePage}
 							store={props.store}
 						/>} path={'/profile'}/>
-						<Route render={()=> <DialogsContainer
-							dialogData={props.dialogsPage.dialogData}
-						  messageData={props.dialogsPage.messageData}
-							dispatch={props.dispatch.bind(props.store)}
-							newCommentTxt = {props.dialogsPage.newCommentTxt}
-							store={props.store}
-						/>} path={'/dialogs'}/>
+						<Route render={()=> <DialogsContainer	/>} path={'/dialogs'}/>
 						<Route render={()=> <Music/>} path={'/music'}/>
 						<Route render={()=> <Games/>} path={'/games'}/>
 						<Route render={()=> <News/>} path={'/news'}/>

@@ -23,7 +23,7 @@ export default (state = initialState, action) => {
 	switch (action.type) {
 		// adding text in textarea in dialogsPage
 		case 'ADD_NEW_COMMENT_TEXT':
-			state.newCommentTxt = action.messageTxt;
+			state.newCommentTxt += action.messageTxt;
 			return state;
 		
 		// add new comment in dialogsPage-dialogData
@@ -42,5 +42,5 @@ export default (state = initialState, action) => {
 
 // action creators
 //for Dialogs NewCommentText andNewComment
-export const addNewCommentTextAC = messageTxt => ({type: ADD_NEW_COMMENT_TEXT, messageTxt: messageTxt});
-export const addNewCommentAC = () => ({type: ADD_NEW_COMMENT});
+export const addNewCommentText = messageTxt => ({type: ADD_NEW_COMMENT_TEXT, messageTxt: messageTxt});
+export const addNewComment = () => ({type: ADD_NEW_COMMENT});

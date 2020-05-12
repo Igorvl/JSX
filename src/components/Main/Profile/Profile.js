@@ -10,9 +10,9 @@ export default (props) => {
 			<div>
 				<ProfileInfo/>
 				<MyPostsContainer
-					postData={props.profilePage.postData}
-					newMsgTxt={props.profilePage.newMsgTxt}
-					store={props.store}
+					// postData={props.profilePage.postData}
+					// newMsgTxt={props.profilePage.newMsgTxt}
+					// store={props.store}
 				/>
 			</div>
 		</div>
