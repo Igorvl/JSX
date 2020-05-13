@@ -28,20 +28,19 @@ let profileReducer = (state = initialState, action) => {
 	switch (action.type) {
 		// add new post in profilePage-postData
 		case 'ADD_POST':
-			state.postData.push({
-				id: 3,
-				msg: state.newMsgTxt,
-				like: 777,
-				dislike: 666,
-				key: 3,
-			},);
-			state.newMsgTxt = "";
-			return state;
+			return {
+				...state, postData: [...state.postData, {
+					id: 3,
+					msg: state.newMsgTxt,
+					like: 777,
+					dislike: 666,
+					key: 3,
+				}], newMsgTxt: "",
+			};
 		
 		// add text in textarea in profilePage
 		case 'ADD_NEW_POST_TEXT':
-			state.newMsgTxt = action.messageTxt;
-			return state;
+			return {...state, newMsgTxt: action.messageTxt};
 		
 		default:
 			return state;
