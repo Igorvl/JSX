@@ -20,20 +20,23 @@ let initialState = {
 };
 
 export default (state = initialState, action) => {
+	//поверхностное копирование state, принцип иммутабельности
+	let newState = {...state};
 	switch (action.type) {
 		// adding text in textarea in dialogsPage
 		case 'ADD_NEW_COMMENT_TEXT':
-			state.newCommentTxt += action.messageTxt;
-			return state;
+			newState.newCommentTxt = action.messageTxt;
+			return newState;
 		
 		// add new comment in dialogsPage-dialogData
 		case 'ADD_NEW_COMMENT':
-			state.messageData.push({
+			newState.messageData = [...state.messageData];
+			newState.messageData.push({
 				id: 5,
-				message: state.newCommentTxt,
+				message: newState.newCommentTxt,
 			});
-			state.newCommentTxt = "";
-			return state;
+			newState.newCommentTxt = "";
+			return newState;
 		
 		default:
 			return state;

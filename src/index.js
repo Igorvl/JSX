@@ -7,7 +7,7 @@ import store from './components/Redux/redux-store';
 import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 
-export let rerenderEntireTree = () => {
+// export let rerenderEntireTree = () => {
 	ReactDOM.render(
 		<BrowserRouter>
 			<Provider store={store}>
@@ -15,8 +15,8 @@ export let rerenderEntireTree = () => {
 			</Provider>
 		</BrowserRouter>,
 		document.getElementById('root'));
-};
+// };
 
-rerenderEntireTree();
-store.subscribe(() => rerenderEntireTree());
+// rerenderEntireTree();
+// store.subscribe(() => rerenderEntireTree());
 serviceWorker.register();
