@@ -10,6 +10,7 @@ import Games from "./components/Main/Games/Games";
 import News from "./components/Main/News/News";
 import Settings from "./components/Main/Settings/Settings";
 import DialogsContainer from "./components/Main/Dialogs/DialogsContainer";
+import UsersContainer from "./components/Main/Users/UsersContainer";
 
 export default (props) => {
 	return (
@@ -23,6 +24,7 @@ export default (props) => {
 							store={props.store}
 						/>} path={'/profile'}/>
 						<Route render={()=> <DialogsContainer	/>} path={'/dialogs'}/>
+						<Route render={()=> <UsersContainer/>} path={'/users'}/>
 						<Route render={()=> <Music/>} path={'/music'}/>
 						<Route render={()=> <Games/>} path={'/games'}/>
 						<Route render={()=> <News/>} path={'/news'}/>

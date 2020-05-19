@@ -24,6 +24,14 @@ export default () => {
 					</NavLink>
 				</li>
 				<li>
+					<NavLink to="/users" className={s.nav_link} activeClassName={s.navLinkActive}>
+						<img src={logoNav} className={s.logo_nav} alt=""/>
+						<span className={s.nav_txt}>
+										Users
+									</span>
+					</NavLink>
+				</li>
+				<li>
 					<NavLink to="/news" className={s.nav_link} activeClassName={s.navLinkActive}>
 						<img src={logoNav} className={s.logo_nav} alt=""/>
 						<span className={s.nav_txt}>
