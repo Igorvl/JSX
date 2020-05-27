@@ -9,10 +9,10 @@ const UNFOLLOW = 'UNFOLLOW';
 //начальные значения для инициализации state redux
 let initialState = {
 	usersData: [
-		{id: 1, logo: {userLogo}, name: 'User1', location: {country: 'Russia', city: 'Moscow'}, follow: true, key: 1},
-		{id: 2, logo: {userLogo}, name: 'User2', location: {country: 'Russia', city: 'Moscow'}, follow: true, key: 2},
-		{id: 3, logo: {userLogo}, name: 'User3', location: {country: 'Russia', city: 'Moscow'}, follow: true, key: 3},
-		{id: 4, logo: {userLogo}, name: 'User4', location: {country: 'Russia', city: 'Moscow'}, follow: false, key: 4},
+		// {id: 1, logo: {userLogo}, name: 'User1', location: {country: 'Russia', city: 'Moscow'}, follow: true, key: 1},
+		// {id: 2, logo: {userLogo}, name: 'User2', location: {country: 'Russia', city: 'Moscow'}, follow: true, key: 2},
+		// {id: 3, logo: {userLogo}, name: 'User3', location: {country: 'Russia', city: 'Moscow'}, follow: true, key: 3},
+		// {id: 4, logo: {userLogo}, name: 'User4', location: {country: 'Russia', city: 'Moscow'}, follow: false, key: 4},
 	],
 };
 
@@ -22,7 +22,7 @@ export default (state = initialState, action) => {
 		// adding text in textarea in dialogsPage
 		case 'GET_USERS':
 			//возвращает копию state, и обновляет newCommentTxt
-			return {...state};
+			return {...state, usersData: action.usersData};
 		
 		// add new comment in dialogsPage-dialogData
 		case 'FOLLOW':
@@ -58,6 +58,6 @@ export default (state = initialState, action) => {
 // action creators
 //for Dialogs NewCommentText andNewComment
 // export const addNewCommentText = messageTxt => ({type: ADD_NEW_COMMENT_TEXT, messageTxt: messageTxt});
-export const getUsersAC = () => ({type: GET_USERS});
+export const getUsersAC = (usersData) => ({type: GET_USERS, usersData: usersData});
 export const followAC = (userId) => ({type: FOLLOW, userId: userId});
 export const unfollowAC = (userId) => ({type: UNFOLLOW, userId: userId});

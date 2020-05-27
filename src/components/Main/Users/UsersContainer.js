@@ -14,7 +14,7 @@ const mapDispatchToProps = (dispatch) => {
 			// callbacks for buttons from Users
 			followCB: userId => dispatch(followAC(userId)),
 			unfollowCB: userId => dispatch(unfollowAC(userId)),
-			getUsersCB: () => dispatch(getUsersAC()),
+			getUsersCB: usersData => dispatch(getUsersAC(usersData)),
 		}
 	)
 };
