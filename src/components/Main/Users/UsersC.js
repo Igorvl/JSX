@@ -6,8 +6,8 @@ import Icon24LikeOutline from '@vkontakte/icons/dist/24/like_outline';
 import * as axios from 'axios';
 
 export default class extends React.Component {
-	constructor(props) {
-		super(props);
+	// ф-я жизненного цикла, вызывается только раз при первой отрисовки компонента.
+	componentDidMount() {
 		//запрос на сервер и производится запись пришедшего списка через getUsersCB
 		axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response =>
 			this.props.getUsersCB(response.data.items));
